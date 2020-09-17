@@ -4,8 +4,6 @@ applications:
     constraints: spaces=nat root-disk=20G
     series: centos8
     num_units: 1
-    resources:
-      slurm: ./../../slurm.resource
     bindings:
       "": nat
   slurmctld:
@@ -13,8 +11,6 @@ applications:
     constraints: spaces=nat root-disk=20G
     series: centos8
     num_units: 1
-    resources:
-      slurm: ./../../slurm.resource
     bindings:
       "": nat
   slurmd:
@@ -22,8 +18,6 @@ applications:
     constraints: spaces=nat root-disk=20G
     series: centos8
     num_units: 1
-    resources:
-      slurm: ./../../slurm.resource
     bindings:
       "": nat
   slurmdbd:
@@ -31,8 +25,6 @@ applications:
     constraints: spaces=nat root-disk=20G
     series: centos8
     num_units: 1
-    resources:
-      slurm: ./../../slurm.resource
     bindings:
       "": nat
   percona-cluster:
